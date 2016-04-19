@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script type="text/javascript">
+function checkInt(val)
+{
+    if ((parseInt(val).toString() != val) && !(val == '-'))
+    {
+        return false;
+    }
+    return true;
+}
+
+function checkPosInt(val)
+{
+    if ((parseInt(val).toString() != val))
+    {
+        return false;
+    }
+    return true;
+}
+
+function checkFloat(val)
+{
+    if ((parseFloat(val).toString() != val) && (parseFloat(val).toString()+ '.' != val))
+    {
+        return false;
+    }
+    return true;
+}
+
+function checkPosFloat(val)
+{
+    if ((parseFloat(val).toString() != val) && !(val == '-') && (parseFloat(val).toString()+ '.' != val))
+    {
+        return false;
+    }
+    return true;
+}
+
+</script>
+
+<div Name1>
+    <input type="text" placeholder="Неотрицательные числа" id="myInput1" onkeypress="return checkFloat(this.value + String.fromCharCode(event.keyCode));" />
+</div>
+<div Name2>
+    <input type="text" placeholder="Длина ограничена" id="myInput2" onkeypress="if (this.value.length > 5) return false;" />
+</div>
+<div Name3>
+    <input type="text" placeholder="Натуральные числа" id="myInput3" onkeypress="return checkPosInt(this.value + String.fromCharCode(event.keyCode));" />
+</div>
+<div Name4>
+    <input type="text" placeholder="Рациональные числа" id="myInput4" onkeypress="return checkPosFloat(this.value + String.fromCharCode(event.keyCode));" />
+</div>
+<div Name5>
+    <input type="text" placeholder="Целые числа" id="myInput5" onkeypress="return checkInt(this.value + String.fromCharCode(event.keyCode));" />
+</div>

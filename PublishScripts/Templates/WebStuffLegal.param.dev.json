@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "WebStuffLegal"
+  },
+  "hostingPlanName": {
+    "value": "What"
+  },
+  "siteLocation": {
+    "value": "North Europe"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "de7cd656-f0ff-4f34-a9e3-fae537b1b8ed"
+  },
+  "resourceGroup": {
+    "value": "Group"
+  }
+}
